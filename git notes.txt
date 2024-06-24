@@ -1,0 +1,20 @@
+
+##only one time setup
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+
+## go to folder->open git bash
+
+1-> git init
+2. git add .
+3. git commit -m "your message"
+4. git remote add origin https://github.com/IAmJustAUsualUser/SI-Calculator.git
+5. git branch -M main
+6. git push -u origin main
+
+
+##after setup
+git add .
+git commit -m "changed file"
+git push
