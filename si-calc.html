@@ -26,7 +26,7 @@
             <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="si-calc.html">SI Calculator</a>
+            <a class="nav-link" href="#">SI Calculator</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -36,40 +36,43 @@
       </div>
     </div>
   </nav>
-  <div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://images.pexels.com/photos/2902939/pexels-photo-2902939.jpeg?auto=compress&cs=tinysrgb&w=600"
-          class="d-block w-100" height="560px" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://images.pexels.com/photos/1449601/pexels-photo-1449601.jpeg?auto=compress&cs=tinysrgb&w=600"
-          class="d-block w-100" height="560px" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://images.pexels.com/photos/3142916/pexels-photo-3142916.jpeg?auto=compress&cs=tinysrgb&w=600"
-          class="d-block w-100" height="560px" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+  <div class="container">
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">SI Calculator</li>
+        </ol>
+      </nav>
   </div>
+  <div class="container mt-5">
+    <h1>AD</h1>
+    <hr>
+    <h2 class="mb-3">SI Calculator</h2>
+    <div class="input-group input-group-lg mb-3">
+      <span class="input-group-text">Principle </span>
+      <input id="Principle" type="number" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+    <div class="input-group input-group-lg mb-3">
+      <span class="input-group-text">Time </span>
+      <input id="Time" type="number" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+    <div class="input-group input-group-lg mb-3">
+      <span class="input-group-text">Rate (%) </span>
+      <input id="Rate" type="number" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+    <button class="btn btn-success mb-3" onclick="Calculate()">Calculate</button>
+
+    <div class="border border-success p-2 mb-3">
+      <p class="text-primary">The Simple Interest(SI) is:</p>
+      <p id="SI" class="text-danger fs-2 ">
+    </div>
+    </div>
 
     <script src="js/script.js"></script>
 
