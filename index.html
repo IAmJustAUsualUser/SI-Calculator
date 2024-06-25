@@ -11,8 +11,9 @@
 
 <body>
   <div class="container mt-5">
-    <h1>AD</h1> <hr>
-    <h1 class="mb-3">SI Calculator</h1>
+    <h1>AD</h1>
+    <hr>
+    <h2 class="mb-3">SI Calculator</h2>
     <div class="input-group input-group-lg mb-3">
       <span class="input-group-text">Principle </span>
       <input id="Principle" type="number" class="form-control" aria-label="Sizing example input"
@@ -45,6 +46,20 @@
         const R = document.getElementById("Rate").valueAsNumber;
         return document.getElementById("SI").innerHTML = (P * T * R) / 100
       }
+
+      const Heading2 = document.querySelector("h2")
+      Heading2.addEventListener("click", function () {
+        Heading2.innerHTML = "Text Changed"
+
+      })
+
+      const Heading1 = document.querySelector("h1")
+      Heading1.addEventListener("click", function () {
+        Heading1.style.fontSize = "49px"
+        Heading1.style.color = "Green"
+        Heading1.style.textAlign = "Center"
+      })
+
 
     </script>
 
