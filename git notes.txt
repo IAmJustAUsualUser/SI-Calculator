@@ -18,3 +18,10 @@ git config --global user.name "Your Name"
 git add .
 git commit -m "changed file"
 git push
+
+##to view all git push commits
+git log --oneline
+
+###revert(go back to previous change state)  // last one is commit id
+git reset --hard 35a01db
+
