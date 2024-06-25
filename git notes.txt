@@ -25,3 +25,5 @@ git log --oneline
 ###revert(go back to previous change state)  // last one is commit id
 git reset --hard 35a01db
 
+##synchronise local code with github
+git pull
