@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SI-Calculator | Web Designing Services</title>
+    <title>AD | Contact</title>
     <link
       rel="icon"
       type="image/png"
@@ -72,10 +72,10 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">SI Calculator</a>
+              <a class="nav-link" href="si-calc.html">SI Calculator</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
+              <a class="nav-link active" href="contact.html">Contact Us</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -92,62 +92,53 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">
-            SI Calculator
-          </li>
-        </ol>
-      </nav>
-    </div>
-    <div class="container mt-5">
-      <h1>AD</h1>
-      <hr />
-      <h2 class="mb-3">SI Calculator</h2>
-      <div class="input-group input-group-lg mb-3">
-        <span class="input-group-text">Principle </span>
+
+    <h1 class="mt-5 text-center">Contact Us</h1>
+    <p class="text-center">
+      Use the below form to contact us and leave a message
+    </p>
+    <div class="col-6 offset-3 mt-5">
+      <div class="mb-3">
+        <label for="fullname" class="form-label">Full Name</label>
         <input
-          id="Principle"
-          type="number"
+          type="text"
           class="form-control"
-          aria-label="Sizing example input"
-          aria-describedby="inputGroup-sizing-lg"
+          id="fullname"
+          placeholder="fullname"
         />
       </div>
-
-      <div class="input-group input-group-lg mb-3">
-        <span class="input-group-text">Time </span>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
         <input
-          id="Time"
           type="number"
           class="form-control"
-          aria-label="Sizing example input"
-          aria-describedby="inputGroup-sizing-lg"
+          id="phone"
+          placeholder="98********"
         />
       </div>
-
-      <div class="input-group input-group-lg mb-3">
-        <span class="input-group-text">Rate (%) </span>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
         <input
-          id="Rate"
-          type="number"
+          type="email"
           class="form-control"
-          aria-label="Sizing example input"
-          aria-describedby="inputGroup-sizing-lg"
+          id="email"
+          placeholder="name@example.com"
         />
       </div>
-
-      <button class="btn btn-success mb-3" onclick="Calculate()">
-        Calculate
-      </button>
-
-      <div class="border border-success p-2 mb-3">
-        <p class="text-primary">The Simple Interest(SI) is:</p>
-        <p id="SI" class="text-danger fs-2"></p>
+      <div class="mb-3">
+        <label for="message" class="form-label">Your Message</label>
+        <textarea
+          class="form-control"
+          id="message"
+          placeholder="your message"
+          rows="5"
+        ></textarea>
+      </div>
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Submit</button>
       </div>
     </div>
+
     <!-- Footer Start -->
     <footer class="bg-dark bg-gradient mt-5 text-lg-start">
       <!-- Copyright -->
